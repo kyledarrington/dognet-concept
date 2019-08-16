@@ -1,2 +1,64 @@
-body{
+$blue-1 : rgb(88, 107, 164);
+$blue-2 : rgb(169, 188, 208);
+$orange : rgb(222, 110, 75);
+
+body {
+    font-family: arial, sans-serif;
+}
+
+//User Post
+.user-post-container {
+    margin: 1rem;
+    border: solid 2px $blue-2;
+    width: 625px;
+    padding: .25rem;
+}
+
+.user-post-content {
+    display: inline-block;
+    width: 525px;
+    padding: 0 10px;
+}
+
+.user-post-header {
+    display: inline-block;
+    vertical-align: top;
+    width: 60px;
+}
+
+.user-post-image {
+    width: 500px;
+    height: 300px;
+
+    img {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.user-post-portrait {
+    width: 60px;
+    height: 60px;
+
+    img {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.user-post-displayname {
+    display: inline-block;
+    padding-top: 1.15rem;
+    margin-bottom:.25rem;
+    span {
+        font-weight: bold;
+        font-size: 1.1rem;
+    }
+}
+
+.user-post-description {
+    p {
+        margin-top: 0;
+        margin-bottom: 1rem;
+    }
 }
