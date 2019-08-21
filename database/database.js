@@ -2,8 +2,8 @@ require('dotenv').config()
 const util = require('util')
 const mysql = require('mysql')
 
-MYSQL_DEV_USER = process.env.MYSQL_DEV_USER;
-MYSQL_DEV_PASSWORD = process.env.MYSQL_DEV_PASSWORD;
+const MYSQL_DEV_USER = process.env.MYSQL_DEV_USER;
+const MYSQL_DEV_PASSWORD = process.env.MYSQL_DEV_PASSWORD;
 
 const pool = mysql.createPool({
   connectionLimit: 10,
