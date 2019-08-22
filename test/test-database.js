@@ -6,18 +6,8 @@ import pool from '../database/database.js';
 
 describe('database', () => {
     describe('connection', () => {
-            var connection;
-            before(() => {
-                return new Promise((resolve) => {
-                    pool.getConnection((err, result) => {
-                        if (err){
-                            throw new Error('Connection Failed');   
-                        }
-                        connection = result;
-                        resolve();
-                    });
-                });
-            }); it('connects', () => {
+        it('connects', async function () {
+            var connection = await pool.getConnection;
             assert.isOk(connection);
         });
     });
